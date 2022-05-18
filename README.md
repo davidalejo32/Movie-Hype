@@ -1,6 +1,6 @@
 ## Movie Hype
 
-Movie App es una aplicación web hecha con  **Html, Sass  y JavaScript**, su diseño esta hecho especialmente para mobile, por lo tanto, no se va a ver bien en dispositivos desktop.
+Movie App es una aplicación web de tipo **SPA** hecha con  **Html, Sass  y JavaScript**, su diseño esta hecho especialmente para mobile, por lo tanto, no se va a ver bien en dispositivos desktop.
 
 Se aplicó llamados a la api **[Movie Api](https://developers.themoviedb.org/3/getting-started/introduction)** la cual fue la  encargada de traer todos los datos.
 
