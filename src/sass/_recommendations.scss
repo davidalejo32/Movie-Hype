@@ -1,0 +1,79 @@
+.recommendations {
+   width: 100%;
+   height: 24rem;
+   margin-top: 2rem;
+
+   .swiper {
+      width: 100%;
+      height: 100%;
+   }
+
+   .swiper-pagination-bullet {
+      background-color: map-get($primary , "blue-accent" );
+      opacity: 0.32;
+
+   }
+
+   .swiper-pagination-bullet-active{
+      width: 25px;
+      border-radius: 4px;
+      background-color: map-get($primary , "blue-accent" );
+      opacity: 1;
+   }
+
+   &__container {
+      width: 85%;
+      height: 20rem;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 1.6rem;
+      overflow: hidden;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         background: linear-gradient(180deg, rgba(16, 16, 17, 0.2) 0%, #101011 83.77%);
+         opacity: 0.32;
+         z-index: 2;
+      } 
+   }
+   
+   &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+   }
+   
+   &__title {
+      color: map-get($tex-color , "white" );
+      font-size: 2rem;
+      position: absolute;
+      bottom: 5rem;
+      left: 2rem;
+      z-index: 3;
+   }
+   
+   &__description {
+      color: map-get($tex-color, "white-grey" );
+      position: absolute;
+      font-size: 1.6rem;
+      bottom: 2rem;
+      left: 2rem;
+      z-index: 3;
+   }       
+}
+
+.prueba {
+   width: 100%;
+   height: auto;
+}
+
+.carousel {
+   width: 100%;
+   height: auto;
+}

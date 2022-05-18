@@ -1,0 +1,54 @@
+.form-search {
+   width: 85%;
+   margin: 0 auto;
+   padding: 5rem 0 2rem 0;
+   
+   &__container {
+      width: 100%;
+      height: 4.5rem;
+      background-color: map-get($primary, "soft" );
+      border-radius: 2.5rem;
+      display: flex;
+      align-items: center;
+   }
+   
+   &__icon {
+      font-size: 2rem;  
+      color: map-get($tex-color , "grey" );
+      cursor: pointer;
+
+      &:hover {
+         color: map-get($tex-color , "white-grey" );
+      }
+   }
+   
+
+   &__input {
+      --message: map-get($tex-color , "grey" );
+
+      width: 100%;
+      height: 100%;
+      font-size: 1.7rem;
+      text-indent: 1rem;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 0 1.5rem;
+      color: map-get($tex-color , "white" );
+
+      &::placeholder {
+         color: --message;
+      }
+
+
+   }
+
+   &__button {
+      width: 2.5rem;
+      height: 100%;
+      margin-right: 2rem;
+      background: transparent;
+      border: none;
+   }
+}
+

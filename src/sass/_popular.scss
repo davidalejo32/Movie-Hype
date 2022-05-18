@@ -1,0 +1,82 @@
+.popular {
+   width: 85%;
+   margin: 0 auto 11rem auto;
+   
+   
+   &__header {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+   
+   }
+
+   &__title {
+      font-size: 2rem;
+      color: map-get($tex-color, "white" );
+   }
+   
+   &__all {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: map-get($primary, "blue-accent" );
+
+   }
+   
+   &__movies {
+      width: 100%;
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+         display: none;
+      }
+   }
+   
+   &__movie {
+      width: 17rem;
+      height: 27rem;
+      border-radius: .5rem;
+      overflow: hidden;
+      background-color: map-get($primary , "soft" );
+      cursor: pointer;
+
+   }
+   
+   &__img {
+      width: 100%;
+      height: 75%;
+      object-fit: cover;
+   }
+   
+   &__name {
+      width: 100%;
+      height: 10%;
+      display: block;
+      font-size: 1.6rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      color: map-get($tex-color, "white" );
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+   }
+   
+   &__category {
+      width: 100%;
+      height: 10%;
+      font-size: 1.3rem;
+      margin-left: 1rem;
+      color: map-get($tex-color, "grey" );
+
+   }
+
+
+}
+
+

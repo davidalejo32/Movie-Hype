@@ -1,0 +1,83 @@
+.nav { 
+   width: 100%;
+   height: 7.2rem;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 0;
+   left: 0;
+   background-color: map-get($primary,  "dark" );
+   gap: 5rem;
+   z-index: 10000;
+
+
+   &__home { 
+      padding: 1rem 1.5rem;
+      width: 4rem;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: .4rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.6s ease;
+
+   }
+   
+   &__icon { 
+      color: map-get($tex-color , "grey" );
+      font-size: 2rem;
+      transition: all 0.6s ease;
+
+   }
+   
+   &__title { 
+      display: none;
+      position: relative;
+      left: 60px;
+      font-size: 1.3rem;
+      margin-left: .5rem;
+      color: map-get($primary , "blue-accent" );
+      opacity: 0;
+      transition: display 0.6s ease;
+   }
+   
+   &__search { 
+      padding: 1rem 1.5rem;
+      width: 4rem;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+   }
+   
+   &__active{
+      background-color: map-get($primary , "soft" );
+      transition: all 0.4s ease;
+   }
+   
+   &__active.nav__home {
+      width: 9.5rem;
+   }
+
+   &__active.nav__search {
+      width: 9.5rem;
+   }
+
+   &__active .nav__title {
+      display: block;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.4s ease;
+   }
+
+   &__active .nav__icon {
+      color: map-get($primary , "blue-accent" );
+      transition: all 0.4s ease;
+   }
+}
+
