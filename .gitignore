@@ -107,5 +107,3 @@ typings/
 #api key
 .env
 
-#dist
-dist/
