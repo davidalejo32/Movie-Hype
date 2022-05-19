@@ -97,9 +97,6 @@ function categoriesPage () {
    movie.setAttribute("id", "inactive");
    genreByName.removeAttribute("id", "inactive");
 
-   const [_,genre,name] = location.hash.split("=");
-   const nameRefactor = name.replace("%20"," ");
-   loadGenresByName (genre, nameRefactor);
 };
 
 
