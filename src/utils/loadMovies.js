@@ -71,12 +71,13 @@ async function loadGenres () {
 
       categoriesCategory.addEventListener("click", ()=> {
          location.hash = `category=${element.id}=${element.name}`;
-         // loadGenresByName(element.id, element.name);
+         loadGenresByName(element.id, element.name);
          genreSee = element.id;
 
       }) 
       categoriesContainer.appendChild(categoriesCategory);
    });
+
 
 };
 
@@ -85,9 +86,7 @@ async function loadGenres () {
 async function loadGenresByName (genre, name) {
 
    const data = await getData('/discover/movie',{
-      params:{
-         "with_genres": genre,
-      }
+      "with_genres": genre,
    });
 
 
