@@ -71,7 +71,6 @@ async function loadGenres () {
 
       categoriesCategory.addEventListener("click", ()=> {
          location.hash = `category=${element.id}=${element.name}`;
-         loadGenresByName(element.id, element.name);
          genreSee = element.id;
 
       }) 
