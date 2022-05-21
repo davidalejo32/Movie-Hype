@@ -32,7 +32,7 @@ Ahora se procede a instalar las dependencias que estan en el archivo **package.j
  
 ---
 ### Link del Proyecto
-[Movie Hype](https://62856b0b685c6307cead5935--heartfelt-entremet-f869b5.netlify.app/)
+[Movie Hype](https://heartfelt-entremet-f869b5.netlify.app/)
 
 ---
 ## Imágenes
